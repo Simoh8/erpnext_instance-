@@ -1,0 +1,11 @@
+{% extends "templates/web.html" %}
+
+{% block content %}
+    <h1>Make a Card Payment</h1>
+    <form action="/process_payment" method="post">
+        <label for="card_number">Card Number:</label>
+        <input type="text" name="card_number" required><br>
+        <!-- Other payment inputs like expiry date, CVV, etc. -->
+        <input type="submit" value="Pay">
+    </form>
+{% endblock %}
